@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100px;
+}
+
+
+html { 
+    background: url(https://images.theconversation.com/files/357535/original/file-20200910-15-1ds0rno.jpg?ixlib=rb-1.1.0&rect=369%2C974%2C4374%2C2183&q=45&auto=format&w=1356&h=668&fit=crop) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+#search-form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+}
+
+
+#temp{
+    text-align:center;
+}
+
+
+#temp #temp-unit{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:1.5rem;
+    color:#ffffff;
+}
+
+
+#temp #temp-value{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color:#ffffff;
+}
+
+
+#climate{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:2.5rem;
+    color:#ffffff;
+    text-align:center;
+    margin-top: 400px;
+    margin-left:180px;
+}
+
+
+#location{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:2.5rem;
+    color:#ffffff;
+    text-align:center;
+}
+
+
+#temp-icon{
+    margin:1rem;
+    width:40%;
+    height:auto;
+}
+
+
+#main{
+    padding:20px;
+    margin-top:10px;
+    background-color:#000000;
+    border-radius:20px;
+    width:360px;
+    height:360px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow:10px 10px 20px 10px rgba(77, 69, 69, 0.925);
+}
+
+
+#search-button{
+    color:blue;
+    text-transform:uppercase;
+    text-decoration:none;
+    background:rgba(130, 191, 231, 0.842);
+    border-radius:2px;
+    margin-left:5px;
+    padding:10px solid #300cd3;
+    display:inline-block;
+    transition:all 0.4 ease 0s;
+    size:50rem;
+}
+
+
+#search-button:hover{
+    color:#ffffff;
+    background:#ff6768;
+    border-color:#36119c;
+    transition:all 0.4s ease 0s;
+}
+
+
+#search-input{
+    width:260px;
+    overflow:hidden;
+    font-size:20px;
+    margin:8px 0;
+    padding:8px 0;
+    border-bottom:3px solid rgb(8, 85, 228);
+    color:black;
+    outline:none;
+    background:none;
+}
+
+
+input{
+    border:none;
+}
+
+
+#app-container{
+    box-sizing: content-box;
+    border-radius:3rem;
+    box-shadow: #6a67ff;
+    background-color: rgba(35, 52, 131, 0.863);
+    width:500px;
+    height:450px;
+    -moz-box-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: aqua;
+}
+
+
+header{
+    font-size: 30px;
+    font-style: oblique;
+    color:rgb(11, 11, 14);
+    text-align: left;
+    text-shadow: #aa41d3;
+}
+
+
+#header-container{
+    color:black;
+    border-radius:0rem;
+    box-shadow:#6b778d;
+    background-color:whitesmoke;
+    width:1500px;
+    height:60px;
+    align-content: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-left: 1200px;
+  }
+
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: black;
+  }
+  
+
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+  
+  /* Add an active class to the active dropdown button */
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+
+
+
+  .footer {  
+    position: relative;  
+    left: 10px;  
+    top:800px; 
+    right: 10px;   
+    width: 95%;  
+    background-color: gray;  
+    color: white;  
+    text-align: center;  
+    margin-left: 0px;
+    }  
+
+
+    #settings-container{
+        box-sizing: content-box;
+        border-radius:0rem;
+        box-shadow: #575764f3;
+        background-color: whitesmoke;
+        width:800px;
+        height:100px;
+        -moz-box-align: center;
+        border-color: rgb(76, 97, 97);
+        align-content: center;
+        margin-left: 100px;
+        color:black;
+        margin-top: 100px;
+    }
+
+
+
+   
