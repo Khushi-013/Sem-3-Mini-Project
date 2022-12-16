@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+        <title>Weather App</title>
+        <head>
+            <link rel="stylesheet" href="styles.css">
+            <meta name="viewport" content="width=device-width", initial-scale="1.0">
+            <style>
+                .container{
+                    box-sizing:border-box;
+                    background-color: white;
+                    padding:10px 50px;
+                    border-radius:20px;
+                    box-shadow:0 0 20px rgb(200,200,200);
+                    width:450px;
+                    display:flex;
+                    flex-direction:column;
+                    gap:10px;
+                    margin-top: 50px;
+                }
+                h1,h3{
+                    font-family:"Roboto Slab";
+                    font-weight:600;
+                }
+                span{
+                    font-weight:500;
+                    font-family:"Poppins";
+                }
+                .toggle-container{
+                    position:relative;
+                    width:fit-content;
+                    height:fit-content;
+                }
+                .toggle{
+                    width:60px;
+                    height:35px;
+                    border-radius:40px;
+                    background-color:#EBEBFB;
+                    display:inline-block;
+                }
+                .toggle-c{
+                    width:24px;
+                    height:24px;
+                    border-radius:50%;
+                    background-color:white;
+                    display:inline-block;
+                    left:5px;
+                    top:5px;
+                    transition:300ms all;
+                    border:1px solid #BCBCA4;
+                }
+                input[type="checkbox"]{
+                    display:none;
+                }
+                input[type="checkbox"],checked+div.toggle-c{
+                    left:30px;
+                background-color:#30305C;
+            }
+            input[type="radio"]{
+                border:0px;
+                width:10%;
+                height:20px;
+                accent-color: black;
+            }
+            .togg-label{
+                display:flex;
+                align-self: center;
+                justify-content:space-between;
+            }
+            .flex{
+                display:flex;
+                gap:5px;
+            }
+            .bottom{
+                margin-top:20px;
+                margin-bottom: 30px;
+            }
+            .bottom:hover{
+                text-decoration:underline;
+            }
+            label,input[type="radio"]{
+                cursor:pointer;
+            }
+            </style>
+        </head>
+    <body>
+        <div  id="header-container">
+            <header>MyWeather App</header>
+            <div class="sidenav"><br><br>
+                <a href="Home.html">Home</a>
+                <a href="Login.html">Settings</a>
+                <a href="Current.html">Current</a>
+                <a href="AirQuality.html">Air Quality</a>
+            </div>
+<div class="container">
+    <div>
+        <br><br><h1>Settings</h1>
+    </div>
+    <div>
+        <div>
+            <label for="togg-1">
+                <span>Dark Mode</span>
+                <input type="checkbox" id="togg-1">
+                <div class="toggle-container">
+                    <span class="toggle"></span>
+                    <span class="toggle-c"></span>
+                </div>
+            </label>
+        </div>
+        <div>
+            <label for="togg-2">
+                <span>Desktop Notification</span>
+                <input type="checkbox" id="togg-2">
+                <div class="toggle-container">
+                    <span class="toggle"></span>
+                    <span class="toggle-c"></span>
+                </div>
+            </label>
+        </div>
+        <div>
+            <label for="togg-3">
+                <span>Focused Inbox</span>
+                <input type="checkbox" id="togg-3">
+                <div class="toggle-container">
+                    <span class="toggle"></span>
+                    <span class="toggle-c"></span>
+                </div>
+            </label>
+        </div>
+        <div>
+            <div>
+                <h3>Conservation View</h3>
+            </div>
+            <div>
+                <label for="radio1" class="flex">
+                    <input type="radio" name="Filter" id="radio">
+                    <span>Newest On Top</span>
+                </label>
+            </div>
+            <div>
+                <label for="radio2" class="flex">
+                    <input type="radio" name="Filter" id="radio">
+                    <span>Newest On Bottom</span>
+                </label>
+            </div>
+            <div>
+                <label for="radio3" class="flex">
+                    <input type="radio" name="Filter" id="radio">
+                    <span>Off</span>
+                </label>
+            </div>
+        </div>
+        <div><h3>Reading Pannel</h3></div>
+        <div><label for="radio4" class="flex">
+            <input type="radio" name="Show-Mode" id="radio">
+            <span>Show On The Right</span>
+        </label></div>
+        <div><label for="radio5" class="flex">
+            <input type="radio" name="Show-Mode" id="radio">
+            <span>Show On The Left</span>
+        </label></div>
+        <div><label for="radio6" class="flex">
+            <input type="radio" name="Show-Mode" id="radio">
+            <span>Off</span>
+        </label></div>
+    </div>
+    <div class="bottom">
+        <span>View all settings...</span>
+    </div>
+</div>
+<div class="footer">  
+    <h1>World</h1>
+    <ul>
+        <li>About MyWeather</li>
+        <li>Digital Advertising</li>
+        <li>Careers</li>
+        <li>Press</li>
+        <li>Contact Us</li>
+    </ul>   
+    </div> 
+    </body>
+</html>
